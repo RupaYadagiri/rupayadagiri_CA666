@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Timetable Example</title>
+</head>
+<body>
+    <h1>College Timetable</h1>
+
+    <table border="2" cellpadding="10" cellspacing="5">
+        <!-- Table Caption -->
+        <caption><strong>Weekly Class Timetable</strong></caption>
+
+        <!-- Table Header -->
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <!-- First Row -->
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td rowspan="2">Computer Science</td> <!-- rowspan 2 rows -->
+            <td>Chemistry</td>
+            <td>English</td>
+        </tr>
+
+        <!-- Second Row -->
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td>Biology</td>
+            <td>Maths</td>
+            <!-- Wednesday is rowspan from previous row -->
+            <td>Physics</td>
+            <td>Computer Lab</td>
+        </tr>
+
+        <!-- Third Row -->
+        <tr>
+            <td>11:00 - 12:00</td>
+            <td colspan="2">Assembly / Break</td> <!-- colspan 2 columns -->
+            <td>Chemistry</td>
+            <td>Maths</td>
+        </tr>
+
+        <!-- Fourth Row -->
+        <tr>
+            <td>12:00 - 1:00</td>
+            <td>Physics</td>
+            <td>English</td>
+            <td>Biology</td>
+            <td>Computer Science</td>
+        </tr>
+
+        <!-- Fifth Row -->
+        <tr>
+            <td>1:00 - 2:00</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+        </tr>
+    </table>
+</body>
+</html>
