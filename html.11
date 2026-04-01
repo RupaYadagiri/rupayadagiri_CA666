@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combinator Selectors Demo</title>
+    <style>
+        /* 1. Descendant selector: all p inside div are blue */
+        div p {
+            color: blue;
+        }
+
+        /* 2. Child selector: immediate span children of div are red */
+        div > span {
+            color: red;
+        }
+
+        /* 3. Adjacent sibling selector: first p after h2 has yellow background */
+        h2 + p {
+            background-color: yellow;
+        }
+
+        /* 4. General sibling selector: all p after h2 are italic */
+        h2 ~ p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Combinator Selectors Example</h1>
+
+<div>
+    <p>Descendant selector example (blue)</p>
+    <span>Child selector example (red)</span>
+    <p>Another descendant (blue)</p>
+</div>
+
+<h2>Adjacent & General Sibling Example</h2>
+<p>Adjacent sibling (yellow background)</p>
+<p>General sibling (italic)</p>
+<p>Another general sibling (italic)</p>
+
+</body>
+</html>
