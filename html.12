@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        /* ----------------------------- */
+        /* i) Simple Selectors */
+        /* ----------------------------- */
+
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #mainHeading {
+            color: red;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Group Selector */
+        h2, h3 {
+            color: green;
+        }
+
+        /* Universal Selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* ----------------------------- */
+        /* ii) Combinator Selectors */
+        /* ----------------------------- */
+
+        /* Descendant Selector */
+        div p {
+            background-color: lightgray;
+        }
+
+        /* Child Selector */
+        div > span {
+            color: purple;
+        }
+
+        /* Adjacent Sibling Selector */
+        h1 + p {
+            font-weight: bold;
+        }
+
+        /* General Sibling Selector */
+        h1 ~ h4 {
+            color: orange;
+        }
+
+        /* ----------------------------- */
+        /* iii) Pseudo-class Selector */
+        /* ----------------------------- */
+
+        a:hover {
+            color: red;
+        }
+
+        li:first-child {
+            color: blue;
+        }
+
+        /* ----------------------------- */
+        /* iv) Pseudo-element Selector */
+        /* ----------------------------- */
+
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        p::after {
+            content: " ✔";
+        }
+
+        /* ----------------------------- */
+        /* v) Attribute Selector */
+        /* ----------------------------- */
+
+        input[type="text"] {
+            background-color: lightblue;
+        }
+
+        a[target="_blank"] {
+            color: purple;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="mainHeading">CSS Selectors Demo</h1>
+
+    <p>This is a paragraph.</p>
+
+    <p class="highlight">This is a highlighted paragraph.</p>
+
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+
+    <div>
+        <p>Paragraph inside div (descendant selector)</p>
+        <span>Span inside div (child selector)</span>
+    </div>
+
+    <h1>Another Heading</h1>
+    <p>Adjacent sibling paragraph</p>
+    <h4>General sibling heading</h4>
+    <h4>Another general sibling</h4>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+
+    <a href="#">Normal Link</a><br>
+    <a href="#" target="_blank">Open in new tab</a>
+
+    <br><br>
+
+    <input type="text" placeholder="Text input">
+    <input type="password" placeholder="Password input">
+
+</body>
+</html>
